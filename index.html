@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Galindo's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8299b731d2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()""></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hey, I'm <span>Jeremy</span> <br>from the BX!</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/coverphoto.jpeg" alt="logo2">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p> As a Technology System Management major specializing in Computer Science, 
+                        I bring a unique blend of technical and analytical skills. I am expanding my 
+                        skill set by learning web development and exploring new ways to create innovative 
+                        and user-friendly online experiences. In addition to my technical expertise,
+                         I am passionate about social justice issues and have been actively involved 
+                         in several cultural clubs on campus. I believe in the power of technology to
+                          create positive change, and I am excited to continue my journey by connecting 
+                          with like-minded professionals and exploring new opportunities in the tech industry.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Proficent</li>
+                            <li><span>HTML, CSS & Javascript</span><br>Proficent</li>
+                            <li><span>React</span><br>Proficent</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Tech Developer Intern</span><br>SEO Tech Developer</li>
+                            <li><span>Web Developer</span><br>Black World</li>
+                            <li><span>CES Consultant</span><br>Division of Information Technology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>B.S in Technology Systems Management Specailization: Computer Science </li>
+                            <li><span>2021</span><br>Highschool for Writing and Communcation Arts</li>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>I am proficent with HTML, CSS, and Javavcript. Most of my website projects have been created via the REACT framework. I have ben able to implement databases with technologies like Supabase, and APIs like openai API. I am currently working towards having better UI designs!</p>
+               
+                </div>
+                <div>
+                    <h2>UI Design</h2>
+                    <p>I have worked with services like Canva and Figma for designs. I typically use Figma for fliers, but I have branched out to use it for website design. I have some experience creating components with the technology.</p>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/logo.png">
+                    <div class="layer">
+                        <h3>FightHub</h3>
+                        <p>This is a simple disscussion board website with the CRUD operation. The backend is built using Supabase! </p>
+                        <a href="https://github.com/jerxmyg/codepath_web102/tree/main/fashionhub/client"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/hireai.png">
+                    <div class="layer">
+                        <h3>Hire AI</h3>
+                        <p>This website allows you to create a cover letter using a copy of your resume and a job description! </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/blackworld.jpeg">
+                    <div class="layer">
+                        <h3>Black World</h3>
+                        <p>This is Black World's website hosted on wordpress.com. I currently publish the articles and pictures for the website.</p>
+                        <a href="http://www.blackworldsbu.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>jeremy.galindo@stonybrook.edu</p>
+                    <p><i class="fa-solid fa-phone"></i>(929)-351-3108</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jeremydgalindo/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jerxmyg"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UCKbZn4SErHAinsJp9D8m6dw""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="images/Jeremy_Galindo_Resume.pdf" download class="btn btn2">Download my Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit"class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg">
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
